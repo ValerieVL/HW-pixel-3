@@ -1,0 +1,89 @@
+#feedback {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: -1;
+  opacity: 0;
+  transition: 1s opacity;
+
+  .form {
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 64px 26px;
+    width: 300px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+
+    #close {
+      width: 27px;
+      height: 27px;
+      background: #777777 url("../img/close.png")center no-repeat;
+      position: absolute;
+      top: -27px;
+      right: -27px;
+      cursor: pointer;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 35px;
+      text-transform: uppercase;
+    }
+
+    input, textarea {
+      width: 100%;
+    }
+
+    input {
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+
+    .error {
+      border-style: solid;
+      border-width: 1px;
+      border-color: rgb(255, 131, 131);
+      background-color: rgb(255, 255, 255);
+      box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
+    }
+
+    input::placeholder {
+      color: #dc7f7f;
+      font-style: italic;
+      padding-left: 10px;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+    textarea {
+      padding-top: 10px;
+      height: 140px;
+      margin-bottom: 20px;
+      resize: none;
+      overflow: hidden;
+    }
+
+    .submit {
+      background: #777777;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 10px 15px;
+      font-weight: bold;
+    }
+
+  }
+}
+
+//.is-hidden {
+//  display: none;
+//}
+

@@ -1,0 +1,150 @@
+main {
+  background: #ffffff;
+
+  .breadcrumbs {
+    list-style: none;
+    color: #767676;
+    margin-top: 11px;
+
+    li {
+      float: left;
+      margin-right: 5px;
+
+      a {
+        color: #767676;
+      }
+    }
+
+  }
+  aside {
+    float: left;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 195px;
+
+    nav {
+      ul {
+        list-style: none;
+        font-size: 18px;
+        line-height: 30px;
+
+        .active {
+          text-decoration: underline;
+        }
+
+        ul {
+
+          .active {
+            font-weight: bold;
+          }
+          font-size: 14px;
+          line-height: 22px;
+          margin-left: 25px;
+          list-style: disc;
+        }
+      }
+      a {
+        color: #767676;
+        text-decoration: none;
+      }
+
+    }
+
+    .price {
+      display: block;
+      background: url("../img/excel.png") top center no-repeat;
+      padding-top: 120px;
+      text-align: center;
+      text-decoration: none;
+      color: #444444;
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 100px;
+    }
+
+  }
+
+  .catalog {
+    float: right;
+    width: 780px;
+    margin-top: 30px;
+    .items-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: wrap;
+
+      .item-empty {
+        width: 250px;
+      }
+
+      .item {
+        background: #dcdcdc;
+        width: 210px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        .photo {
+          width: 100%;
+          height: auto;
+        }
+        .desc {
+          margin-top: 15px;
+          font-size: 18px;
+          line-height: 18px;
+        }
+        .cost, .basket {
+          margin-top: 50px;
+        }
+        .cost {
+          font-size: 28px;
+          font-weight: bold;
+          float: left;
+        }
+        .basket {
+          float: right;
+          margin-right: 16px;
+        }
+      }
+    }
+
+    .number-pages {
+      list-style: none;
+      display: flex;
+      margin-top: 13px;
+      justify-content: center;
+      li {
+        margin-right: 20px;
+        .active {
+          font-size: 18px;
+          color: #444444;
+        }
+        a {
+          text-decoration: none;
+          color: #767676;
+        }
+      }
+
+    }
+
+    .separator {
+      height: 1px;
+      background: #777777;
+      margin: 60px 0 30px;
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 0 200px;
+      p {
+        width: 370px;
+      }
+    }
+
+
+
+
+  }
+
+}
+

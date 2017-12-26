@@ -1,0 +1,45 @@
+header {
+  background: #dcdcdc;
+  height: 230px;
+
+  .wrapper-header {
+    width: 980px;
+    margin: 0 auto;
+    height: inherit;
+
+    .left {
+      height: inherit;
+      float: left;
+      display: flex;
+      align-items: center;
+    }
+
+    .right {
+      float: right;
+      margin-top: 44px;
+
+      h1 {
+        color: #767676;
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: 0.025em;
+        font-family: 'OpenSansCondensedLight';
+        text-align: right;
+      }
+
+      .feedback-button {
+        text-align: right;
+        text-decoration: none;
+        border-bottom: 2px dashed #767676;
+        font-weight: bold;
+        color: #767676;
+        font-size: 24px;
+        float: right;
+        margin-top: 5px;
+      }
+
+    }
+
+  }
+
+}

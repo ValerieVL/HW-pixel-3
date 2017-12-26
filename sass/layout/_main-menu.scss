@@ -1,0 +1,30 @@
+.main-menu {
+  background: #777777;
+  height: 80px;
+  font-size: 30px;
+  letter-spacing: 0.025em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    list-style: none;
+    color: #ffffff;
+
+    a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    li {
+      margin: 7px;
+    }
+
+  }
+
+}

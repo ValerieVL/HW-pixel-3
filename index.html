@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пиксель Плюс</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/swiper/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div id="feedback">
+    <div class="form">
+        <div id="close"></div>
+        <h2>Обратная связь</h2>
+        <form>
+            <label>Ваше имя *<input type="text" name="name"></label>
+            <label>Телефон *<input type="text" name="phone"></label>
+            <label>Email *<input type="text" name="email"></label>
+            <label>Сообщение<textarea name="message"></textarea></label>
+            <input class="submit" type="button" onclick="validate(this.form)" value="Отправить">
+        </form>
+    </div>
+</div>
+<div class="main-wrapper">
+    <header>
+        <div class="wrapper-header">
+            <div class="left">
+                <img src="img/logo.png" width="273" height="100" alt="Название компании">
+            </div>
+            <div class="right">
+                <h1>+7(499) 777-77-77<br>
+                    +7(499) 777-77-77</h1>
+                <a href="#" id="feedback-button" class="feedback-button">Обратная связь</a>
+            </div>
+        </div>
+    </header>
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li>|</li>
+            <li><a href="#">Каталог</a></li>
+            <li>|</li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li>|</li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li>|</li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(img/slide1.png)"></div>
+                <div class="swiper-slide" style="background-image:url(img/slide2.png)"></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="arrows-wrapper">
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <ul class="breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li>/</li>
+            <li><a href="#">Каталог</a></li>
+            <li>/</li>
+            <li>Бытовая техника</li>
+        </ul>
+        <div style="clear: both;"></div>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Автомобили</a></li>
+                    <li><a href="#" class="active">Бытовая техника</a>
+                        <ul>
+                            <li><a href="#" class="active">Микроволновки</a></li>
+                            <li><a href="#">Холодильники</a></li>
+                            <li><a href="#">Посудомоечные машины</a></li>
+                            <li><a href="#">Чайники</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Мобильная техника</a></li>
+                    <li><a href="#">Компьютеры</a></li>
+                    <li><a href="#">Одежда</a></li>
+                    <li><a href="#">Недвижимость</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="price">Прайс-лист</a>
+        </aside>
+        <section class="catalog">
+            <div class="items-wrapper">
+                <div class="item">
+                    <img src="img/nophoto.png" alt="Product photo" class="photo">
+                    <p class="desc">Самый клевый чайник, который надо купить!</p>
+                    <p class="cost">1 900 р.</p>
+                    <a href="#" title="Add to basket" class="basket">
+                        <img alt="Add to basket" src="img/addtobasket_mini.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="img/nophoto.png" alt="Product photo" class="photo">
+                    <p class="desc">Самый клевый чайник, который надо купить!</p>
+                    <p class="cost">1 900 р.</p>
+                    <a href="#" title="Add to basket" class="basket">
+                        <img alt="Add to basket" src="img/addtobasket_mini.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="img/nophoto.png" alt="Product photo" class="photo">
+                    <p class="desc">Самый клевый чайник, который надо купить!</p>
+                    <p class="cost">1 900 р.</p>
+                    <a href="#" title="Add to basket" class="basket">
+                        <img alt="Add to basket" src="img/addtobasket_mini.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="img/nophoto.png" alt="Product photo" class="photo">
+                    <p class="desc">Самый клевый чайник, который надо купить!</p>
+                    <p class="cost">1 900 р.</p>
+                    <a href="#" title="Add to basket" class="basket">
+                        <img alt="Add to basket" src="img/addtobasket_mini.png">
+                    </a>
+                </div>
+                <div class="item">
+                    <img src="img/nophoto.png" alt="Product photo" class="photo">
+                    <p class="desc">Самый клевый чайник, который надо купить!</p>
+                    <p class="cost">1 900 р.</p>
+                    <a href="#" title="Add to basket" class="basket">
+                        <img alt="Add to basket" src="img/addtobasket_mini.png">
+                    </a>
+                </div>
+                <div class="item-empty"></div>
+            </div>
+            <ul class="number-pages">
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#" class="active">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+            </ul>
+            <div class="separator"></div>
+            <div class="about">
+                <p>
+                    Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более
+                    чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив
+                    состоит из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для
+                    этого жанра мотивы: неразделённой любви, ухода молодости, угасания души.
+                </p>
+                <p>
+                    Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной
+                    момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При
+                    этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные
+                    разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под
+                    руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+                </p>
+            </div>
+        </section>
+        <div style="clear: both;"></div>
+    </main>
+    <footer>
+        <div class="wrapper-footer">
+            <p class="copyright">© 2012–2013 ЗАО «Компания»<br>
+                info@name.ru</p>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="pixel-plus">
+                <p><a href="#">Paзработка сайта</a> — <br>
+                    компания «Пиксель Плюс»</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </footer>
+</div>
+<!-- Swiper JS -->
+<script src="lib/swiper/js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        }
+    });
+</script>
+</body>
+</html>
